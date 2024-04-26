@@ -1,0 +1,10 @@
+---
+const current = (route) => route === Astro.url.pathname
+---
+<header>
+  <nav class="flex justify-end items-center gap-4 text-white/[0.7]">
+    <a href="/" class={ current('/') ? 'bg-white text-[#040f8d]' : 'hover:bg-white hover:text-[#040f8d]' }>About</a>
+    <a href="/now" class={ current('/now') ? 'bg-white text-[#040f8d]' : 'hover:bg-white hover:text-[#040f8d]' }>Now</a>
+    <a href="/works" class={ current('/works') ? 'bg-white text-[#040f8d]' : 'hover:bg-white hover:text-[#040f8d]' }>Works</a>
+  </nav>
+</header>

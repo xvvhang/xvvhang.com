@@ -1,30 +1,13 @@
 ---
-import Minimal from '../layouts/minimal.astro'
+import App from '@/layouts/app.astro'
 ---
 
-<Minimal>
-  <article>
-    <h1>xvvhang</h1>
-    <p>Hi, I'm Xu Hang (xvvhang).</p>
-    <p>
-      I make <a href="https://github.com/xvvhang" target="_blank">programs</a>,
-      write <a href="https://xvvhang.substack.com" target="_blank">posts</a>
-      and take <a href="https://instagram.com/xvvhang" target="_blank">photos</a>.
-      Stay <a href="https://twitter.com/xvvhang" target="_blank">tuned</a> for my works.
-    </p>
+<App>
+  <article class="flex flex-col items-start gap-4">
+    <h1>About</h1>
+    <p>Hi, I'm xvvhang.</p>
+    <p>I'm a programmer and photographer based in Shanghai</p>
+    <p>I'm working on fullstack developments of heywhale.com at Heywhale and learning Gen AI and Rust language.</p>
+    <p>I'm learning development and scanning of films and shooting more photos on streets.</p>
   </article>
-</Minimal>
-
-<style>
-article a {
-  color: white;
-}
-article h1, p {
-  user-select: none;
-}
-article a:hover {
-  text-decoration: none;
-  background: white;
-  color: #040f8d;
-}
-</style>
+</App>
